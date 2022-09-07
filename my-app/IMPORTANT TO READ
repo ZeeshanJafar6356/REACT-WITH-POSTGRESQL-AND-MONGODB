@@ -4,14 +4,17 @@ SALAM
 
 IN the Source Folder all the frond end is present there using react
 
+HEROKU URL:https://ecommerce-by-zeeshan.herokuapp.com/
 and the rest of the files are of backend Node js Using mongodb(mongoose) and postgresql
 
+To check Postgresql CRUD you can start node shop.js that wille xecute all te commands of postgresql e-commerce
 
 
-TO CHECK PURE MONGODB YOU CAN START NODE mongodbcrud that will execute all the cruds of e-commerce 
+TO CHECK PURE MONGODB CRUD YOU CAN START NODE mongodbcrud.js that will execute all the cruds of e-commerce 
 
 
-TO CHECK  MONGODB alongwith mongoose  YOU CAN START NODE mongoosecrud that will execute all the cruds of e-commerce 
+TO CHECK  MONGODB alongwith mongoose  YOU CAN START NODE mongoosecrud/js that will execute all the cruds of e-commerce 
+
 
 
 THANKYOU
