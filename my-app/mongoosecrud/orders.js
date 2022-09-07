@@ -1,4 +1,4 @@
-// const mongoose = require('mongoose');
+
 const express = require('express');
 const dbMongoose = require('../configuration file/mongooseatlas');
 const orders = require('../schemas/orders');
@@ -7,9 +7,7 @@ routers.use(express.json());
 // const routers = express();
 // routers.use(express.json());
 
-////////////////////////
-/////FindingData in DB
-////////////////////////////////////
+
 // get api
 // routers.get('/:id', async (req, res) => {
 routers.get('/orders', async (req, res) => {
@@ -61,8 +59,7 @@ routers.patch('/orders/:id', async (req, res) => {
 });
 
 // adding data in DB
-///////////////////////////
-////constraints are used here
+
 routers.post('/orders', async (req, res) => {
   try {
     let data = dbMongoose();
@@ -88,7 +85,5 @@ routers.delete('/orders/:id', async (req, res) => {
   }
 });
 
-// routers.listen(8080, () => {
-//   console.log('connected to 8080 port');
-// });
+
 module.exports = routers;
