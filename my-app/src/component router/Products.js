@@ -9,9 +9,8 @@ const Home = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    // http://localhost:8000/Products/ mongo db
     axios
-      .get(' http://localhost:8000/Products/')
+      .get('http://localhost:5000/api/products')
       .then((res) => {
         console.log(res.data);
         setData(res.data);
