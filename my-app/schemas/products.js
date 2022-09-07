@@ -8,4 +8,6 @@ let products = new mongoose.Schema({
   color: { type: String, required: true },
   quantity: { type: Number, required: true },
 });
-module.exports = mongoose.model('product', products);
+const Product = mongoose.model('product', products);
+// module.exports = mongoose.model('product', products);
+module.exports = Product;
