@@ -1,5 +1,17 @@
+
+
+SALAM 
+
 IN the Source Folder all the frond end is present there using react
 
-and the rest of the files are of backend Node js USing mongodb(mongoose) and postgresql
+and the rest of the files are of backend Node js Using mongodb(mongoose) and postgresql
 
-there is one problem as in the mongoosecrud folder you have to run each file seperately i tried everything but its not connecting to one file
+
+
+TO CHECK PURE MONGODB YOU CAN START NODE mongodbcrud that will execute all the cruds of e-commerce 
+
+
+TO CHECK  MONGODB alongwith mongoose  YOU CAN START NODE mongoosecrud that will execute all the cruds of e-commerce 
+
+
+THANKYOU
