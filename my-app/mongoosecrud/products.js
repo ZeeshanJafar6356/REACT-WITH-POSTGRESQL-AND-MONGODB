@@ -1,17 +1,12 @@
-// const mongoose = require('mongoose');
+
 const express = require('express');
 const dbMongoose = require('../configuration file/mongooseatlas');
 const Product = require('../schemas/products');
 const routers = express.Router();
 routers.use(express.json());
-// const routers = express();
-// routers.use(express.json());
 
-////////////////////////
-/////FindingData in DB
-////////////////////////////////////
-// get api
-// routers.get('/:id', async (req, res) => {
+
+
 routers.get('/products', async (req, res) => {
   try {
     let data = dbMongoose();
@@ -21,7 +16,7 @@ routers.get('/products', async (req, res) => {
   } catch (error) {}
 });
 /////get by id
-// routers.get('/:id', async (req, res) => {
+
 routers.get('/products/:id', async (req, res) => {
   try {
     let data = dbMongoose();
@@ -75,9 +70,7 @@ routers.post('/products', async (req, res) => {
   }
 });
 
-////////////////////////
-/////Deleting Data in DB
-////////////////////////////////////
+
 routers.delete('/products/:id', async (req, res) => {
   try {
     let data = dbMongoose();
@@ -91,8 +84,6 @@ routers.delete('/products/:id', async (req, res) => {
   }
 });
 
-// routers.listen(8080, () => {
-//   console.log('connected to 8080 port');
-// });
+
 
 module.exports = routers;
