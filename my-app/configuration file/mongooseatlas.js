@@ -1,6 +1,6 @@
 // connecting mongo with mongo atlas using mongoose
 const mongoose = require('mongoose');
-// const customers = require('../schemas/customers');
+
 
 async function dbMongoose() {
   mongoose.connect(
