@@ -6,9 +6,8 @@ const Customers = require('../schemas/customers');
 const routers = express.Router();
 routers.use(express.json());
 
-////////////////////////
 /////FindingData in DB
-////////////////////////////////////
+
 // get api
 routers.get('/customers', async (req, res) => {
   try {
@@ -72,7 +71,7 @@ routers.post('/customers', async (req, res) => {
   }
 });
 
-////////////////////////
+
 routers.delete('/customers/:id', async (req, res) => {
   try {
     let data = dbMongoose();
