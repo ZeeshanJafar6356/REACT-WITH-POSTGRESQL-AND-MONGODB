@@ -1,19 +1,51 @@
+HELLO THERE!
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-SALAM 
+IN the Source Folder all the frond end is present there using react and the rest of the files are of backend Node js Using mongodb(mongoose) and postgresql
 
-IN the Source Folder all the frond end is present there using react
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 HEROKU URL:https://ecommerce-by-zeeshan.herokuapp.com/
-and the rest of the files are of backend Node js Using mongodb(mongoose) and postgresql
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 To check Postgresql CRUD you can start node shop.js that wille xecute all te commands of postgresql e-commerce
 
 
+POSTMAN:
+CUSTOMERS
+http://localhost:5000/api/customers
+PRODUCTS
+http://localhost:5000/api/products
+ORDERS:
+http://localhost:5000/api/orders
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 TO CHECK PURE MONGODB CRUD YOU CAN START NODE mongodbcrud.js that will execute all the cruds of e-commerce 
 
+POSTMAN:
+CUSTOMERS
+http://localhost:5000/customers/
+PRODUCTS
+http://localhost:5000/products/
+ORDERS:
+http://localhost:5000/customers/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 TO CHECK  MONGODB alongwith mongoose  YOU CAN START NODE mongoosecrud/js that will execute all the cruds of e-commerce 
+
+POSTMAN:
+CUSTOMERS
+http://localhost:8080/customers
+PRODUCTS
+http://localhost:8080/products
+ORDERS:
+http://localhost:8080/orders
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
