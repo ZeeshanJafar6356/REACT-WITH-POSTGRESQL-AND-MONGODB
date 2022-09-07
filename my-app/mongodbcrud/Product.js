@@ -1,5 +1,5 @@
 const { MongoClient } = require('mongodb');
-// const url = 'mongodb://localhost:27017';
+
 const url =
   'mongodb+srv://zeeshan:test123@test.t97whfr.mongodb.net/test?retryWrites=true&w=majority';
 
@@ -66,34 +66,13 @@ router.put('/products/:_id', async (req, res) => {
   console.log(req.body);
   res.send(result);
 });
-// PATCH API
-
-// router.patch('/products/:id', async (req, res) => {
-//   const { _id } = req.params;
-//   let data = await dbConnection();
-//   let result = await data.updateOne(
-//     { _id: ObjectId(_id) },
-//     {
-//       $set: {
-//         Name: req.body.Name,
-//       },
-//     }
-//   );
-
-//   console.log('UPDATED');
-//   console.log(req.body);
-//   res.send(result);
-// });
 
 router.delete('/products/:_id', async (req, res) => {
   const { _id } = req.params;
   console.log(_id);
   let data = await dbConnection();
   data = await data.deleteOne({ _id: ObjectId(_id) });
-  // console.log(req.body);
+  console.log(req.body);
   res.send(data);
-});
-// router.listen(8000, () => {
-//   console.log('listening on port 8000');
-// });
+
 module.exports = router;
